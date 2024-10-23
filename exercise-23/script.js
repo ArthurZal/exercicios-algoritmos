@@ -1,13 +1,19 @@
-let anoNascimento = 2014;
-let anoAtual = 2024;
-let idade = anoAtual - anoNascimento;
-let idadeAlistamento = 18;
+let nome = "Arthur Oliveira";
+let sexo = "Masculino";
+let valorTotalDaCompra = 200;
 
-if (idade < idadeAlistamento) {
+if (sexo === "Feminino") {
 
-    console.log(`Faltam ${idadeAlistamento - idade} anos para o alistamento militar`);
+    let valorDesconto = (valorTotalDaCompra * 13) / 100;
+    valorTotalDaCompra = valorTotalDaCompra - valorDesconto;
+    console.log(valorDesconto);
+    console.log(valorTotalDaCompra);
 
 } else {
 
-    console.log(`Já se passaram ${idade - idadeAlistamento} anos desde o alistamento militar`);
+    let valorDesconto = (valorTotalDaCompra * 5) /100;
+    valorTotalDaCompra = valorTotalDaCompra - valorDesconto;
+    console.log(valorDesconto);
+    console.log(valorTotalDaCompra);
+
 }
